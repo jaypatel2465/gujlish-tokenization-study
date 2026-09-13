@@ -10,7 +10,7 @@ If someone shared this repo with you to run the final experiment on your GPU:
 
 ```bash
 # 1. Clone
-git clone https://github.com/YOUR_USERNAME/gujlish-tokenization-study.git
+git clone https://github.com/jaypatel2465/gujlish-tokenization-study.git
 cd gujlish-tokenization-study
 
 # 2. Install PyTorch with CUDA (visit https://pytorch.org for the exact command for your CUDA version)
