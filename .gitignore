@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Gujlish Tokenization Study — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── HuggingFace model cache (too large for GitHub; re-downloaded automatically) ──
+hf_cache/
+
+# ── Large binary model weights saved locally ──
+models/mbert_adapted/model.safetensors
+models/mbert_adapted/pytorch_model.bin
+# (keep the tokenizer config files — they are small & needed)
+
+# ── Large raw data files ──
+data/raw/
+data/processed/filtered_dataset.csv
+data/processed/filtered_clean.csv
+data/processed/word_frequencies.csv
+data/processed/word_piece_counts.csv
+
+# ── Keep dev_subset and vocab additions (needed by Phase 7 runner) ──
+!data/processed/dev_subset.csv
+!data/processed/gujlish_vocab_additions.txt
+
+# ── Temporary training output dirs ──
+models/tmp_*/
+models/mbert_baseline_*/
+models/MuRIL_*/
+
+# ── Python cache ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Virtual environments ──
+venv/
+.venv/
+env/
+.env/
+
+# ── OS junk ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs (keep git-ignored so CI doesn't accumulate them) ──
+logs/phase7_fold_results.csv
+
+# ── IDE ──
+.vscode/
+.idea/
+*.code-workspace

@@ -1,0 +1,3 @@
+tokenizer,vocab_size,unique_words_analyzed,avg_subwords_per_word,median_subwords_per_word,pct_words_fragmented,pct_words_single_token,pct_words_3plus_pieces,max_pieces_any_word,avg_fragmentation_ratio
+mBERT (bert-base-multilingual-cased),119547,51182,2.6589,2.0,79.33,20.67,43.46,66,3.0912
+MuRIL (google/muril-base-cased),197258,51182,2.3227,2.0,70.02,29.98,33.43,65,2.8892

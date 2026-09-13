@@ -1,0 +1,12 @@
+step,count,pct_of_original
+rows_before_cleaning,21359,100.00%
+removed_empty_null,0,0.00%
+removed_missing_label,0,0.00%
+removed_spam_url,13,0.06%
+removed_exact_duplicates,0,0.00%
+total_removed,13,0.06%
+rows_after_cleaning,21346,99.94%
+dev_subset_size,3000,14.05% of cleaned
+class_positive_after_cleaning,12538,58.74% of cleaned
+class_neutral_after_cleaning,7491,35.09% of cleaned
+class_negative_after_cleaning,1317,6.17% of cleaned

@@ -1,0 +1,29 @@
+To: [Researcher's email — find on ResearchGate profile]
+Subject: Academic Access Request — Gujarati-English Code-Mixed Dataset
+
+Dear Researcher,
+
+I am a Computer Engineering student working on empirical NLP research focused on
+subword tokenization and its impact on semantic representation in Gujarati-English
+code-mixed (Gujlish) text.
+
+I came across your paper "Language Identification and Translation of English and
+Gujarati code-mixed data" which describes a 44,672-sentence five-class dataset for
+Gujarati-English code-mixed NLP. I am writing to respectfully request academic access
+to this dataset for the purpose of comparison and validation in my research.
+
+My research is non-commercial and will be submitted as part of my academic coursework.
+I am happy to:
+- Cite your work appropriately in any resulting publication
+- Share my findings with you upon completion
+- Comply with any data usage restrictions you specify
+
+Could you please let me know if access can be arranged, or if there is an official
+request process I should follow?
+
+Thank you very much for your time and your contribution to the field.
+
+Best regards,
+[Your Name]
+[Your Institution]
+[Your Email]

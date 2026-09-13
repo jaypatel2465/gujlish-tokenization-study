@@ -1,0 +1,13 @@
+word1,word2,category,note,w1_mbert_pieces,w2_mbert_pieces,w1_adapted_pieces,w2_adapted_pieces,similarity_before,similarity_after,change,direction,source,wilcoxon_stat_overall,wilcoxon_p_overall,wilcoxon_significant
+ખૂબ,ઘણો,similar,Both mean 'very/a lot' in Gujarati,3,3,1,3,0.631248,0.399318,-0.23193,degraded,dataset_vocab,1.0,0.25,False
+આવ,આવો,similar,Both are imperatives of 'come',2,2,2,2,0.698688,0.698688,0.0,unchanged,dataset_vocab,1.0,0.25,False
+saras,saru,similar,Both mean 'good/nice' in romanized Gujlish,2,2,2,2,0.815625,0.815625,0.0,unchanged,dataset_vocab,1.0,0.25,False
+khub,ghana,similar,Both mean 'very/a lot' in romanized Gujlish,2,2,2,2,0.575277,0.575277,0.0,unchanged,dataset_vocab,1.0,0.25,False
+સારૂ,ખરાબ,opposite,Good vs Bad,3,3,3,3,0.530371,0.530371,0.0,unchanged,dataset_vocab,1.0,0.25,False
+ખૂબ,ઓછો,opposite,A lot vs A little/few,3,3,1,3,0.66614,0.36883,-0.29731,degraded,dataset_vocab,1.0,0.25,False
+ભાઈ,બહેન,opposite,Brother vs Sister,3,3,1,3,0.70252,0.432363,-0.270157,degraded,dataset_vocab,1.0,0.25,False
+હા,ના,opposite,Yes vs No,2,1,2,1,0.552795,0.552795,0.0,unchanged,dataset_vocab,1.0,0.25,False
+ખૂબ,ઘર,unrelated,Very/a-lot vs House -- no relationship,3,2,1,2,0.400302,0.403948,0.003647,unchanged,dataset_vocab,1.0,0.25,False
+સારૂ,આવ,unrelated,Good vs Come -- no relationship,3,2,3,2,0.616614,0.616614,0.0,unchanged,dataset_vocab,1.0,0.25,False
+હા,ઘર,unrelated,Yes vs House -- no relationship,2,2,2,2,0.503701,0.503701,0.0,unchanged,dataset_vocab,1.0,0.25,False
+khub,ghar,unrelated,Very vs House -- control,2,2,2,2,0.543254,0.543254,0.0,unchanged,dataset_vocab,1.0,0.25,False

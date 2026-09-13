@@ -1,0 +1,8 @@
+date,phase,model,tokenizer,dataset_version,sample_size,vocab_size,learning_rate,batch_size,epochs,seed,result
+2026-09-10T18:00:39.441606,Phase1,,,ShrutiPatel3011/gujarati-english-codemixed-sentiment,21359,,,,,42,"filtered=21359/21729, audit_sample=150"
+2026-09-10T18:00:56.059253,Phase2,,,,21346,,,,,42,"start=21359, after_clean=21346, removed=13 (empty=0, no_label=0, spam=13, dupes=0), dev_subset=3000"
+2026-09-11T10:16:05.034968,Phase3,,mBERT + MuRIL,,51182,,,,,,mBERT: avg=2.659 pct_frag=79.3% | MuRIL: avg=2.323 pct_frag=70.0%
+2026-09-11T10:17:32.354093,Phase4,,mBERT,,276,75,,,,,"candidates_after_filter=276, selected=75, freq_threshold=10, score_range=14.34-30.25"
+2026-09-11T10:22:06.298837,Phase4,,mBERT,,254,75,,,,,"candidates_after_filter=254, selected=75, freq_threshold=10, score_range=14.10-29.74"
+2026-09-11T12:06:52.744192,Phase5,bert-base-multilingual-cased,mBERT adapted,,51180,119547->119622,,,,,"tokens_added=75, avg: 2.659->2.646, frag%: 79.3%->79.2%"
+2026-09-11T12:07:24.809404,Phase6,bert-base-multilingual-cased (baseline + adapted),mBERT + mBERT_adapted,,12,,,,,42,"n_pairs=12, mean_change=-0.0663, wilcoxon_p=0.25, significant=False"
