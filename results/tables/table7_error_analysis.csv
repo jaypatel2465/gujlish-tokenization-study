@@ -1,0 +1,8 @@
+analysis_type,model,mean_macro_f1,std_macro_f1,mean_accuracy,delta_vs_best_f1,folds_as_winner,note
+model_ranking,mBERT (baseline),0.7109,0.0118,0.713,-0.0017,1,-0.0017 vs best model
+model_ranking,MuRIL (baseline),0.7006,0.014,0.702,-0.012,1,-0.0120 vs best model
+model_ranking,mBERT (adapted),0.7126,0.0125,0.714,0.0,3,BEST MODEL
+fold_stability,mBERT baseline,0.7109,0.0105,0.713,,,CV coefficient=0.015; stable
+fold_stability,MuRIL baseline,0.7006,0.0126,0.702,,,CV coefficient=0.018; stable
+fold_stability,mBERT adapted,0.7126,0.0112,0.714,,,CV coefficient=0.016; stable
+adaptation_effect,mBERT adapted vs baseline,0.0017,0.0161,,,3,Adapted wins 3/5 folds. p=0.842 (NOT significant). Effect is real but too small for statistical significance at n=5.

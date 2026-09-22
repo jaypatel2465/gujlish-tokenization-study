@@ -1,0 +1,9 @@
+{
+  "test": "paired t-test",
+  "statistic": 0.212038,
+  "p_value": 0.842444,
+  "significant": false,
+  "alpha": 0.05,
+  "n_folds": 5,
+  "interpretation": "No significant difference between adapted and baseline mBERT."
+}

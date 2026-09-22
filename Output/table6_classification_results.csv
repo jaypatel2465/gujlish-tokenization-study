@@ -1,0 +1,4 @@
+model,model_id,n_folds,mean_accuracy,std_accuracy,mean_macro_f1,std_macro_f1,mean_macro_precision,std_macro_precision,mean_macro_recall,std_macro_recall
+mBERT (baseline),mBERT_baseline,5,0.713,0.010233,0.71087,0.011767,0.715799,0.008904,0.713,0.010233
+MuRIL (baseline),MuRIL_baseline,5,0.702,0.013354,0.70058,0.014034,0.722212,0.014338,0.702,0.013354
+mBERT (adapted),mBERT_adapted,5,0.714,0.013049,0.712574,0.012496,0.716121,0.013043,0.714,0.013049
