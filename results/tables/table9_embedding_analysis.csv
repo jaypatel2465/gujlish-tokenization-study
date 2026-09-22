@@ -1,0 +1,12 @@
+metric,baseline,adapted
+Sample size,300,300.0
+Mean sentence frag. rate,0.3262,0.3235
+Avg tokens per sentence,37.34,37.2
+Embedding drift (mean cos sim),—,0.9962999820709229
+Embedding drift (min cos sim),—,0.018300000578165054
+Intra-class cosine similarity,0.7492,0.7542999982833862
+Inter-class cosine similarity,0.7412,0.7457000017166138
+Class separation (intra−inter),0.008,0.00860000029206276
+Sent. frag. rate [negative],0.3109,0.3107
+Sent. frag. rate [neutral],0.3614,0.3604
+Sent. frag. rate [positive],0.3064,0.2995

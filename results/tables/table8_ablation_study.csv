@@ -1,0 +1,4 @@
+condition,vocab_size,tokens_added,mean_macro_f1,std_macro_f1,mean_accuracy,std_accuracy,mean_precision,mean_recall,cohens_d_vs_baseline,n_folds,description
+mBERT (baseline),119547,0,0.7109,0.0105,0.713,0.0092,0.7158,0.713,0.0,5,Standard mBERT — no adaptation
+MuRIL (baseline),197258,0,0.7006,0.0126,0.702,0.0119,0.7222,0.702,-0.6596,5,"MuRIL — large Indian-language vocab, no adaptation"
+"mBERT (adapted, +66 tokens)",119613,66,0.7126,0.0112,0.714,0.0117,0.7161,0.714,0.106,5,mBERT + 66 high-frequency Gujarati-script tokens

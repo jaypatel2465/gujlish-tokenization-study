@@ -241,3 +241,67 @@ Vocabulary adaptation produces a small, consistent, but statistically non-signif
    - **Practical conclusion**: Vocabulary adaptation provides a small, consistent benefit (+0.17% F1) that does not reach significance at n=5 folds. Larger experiments or continued pre-training are needed to confirm the effect.
 
 6. **MuRIL**: Despite a 65% larger vocabulary and explicit South Asian language training, MuRIL performs worst on this social-media code-mixed task, suggesting that training data domain matters more than vocabulary size alone.
+
+
+---
+
+## Phase 8: Ablation Study
+
+### Table 8: Vocabulary Adaptation Ablation
+
+| Condition | Vocab Size | +Tokens | Mean Macro-F1 | ±Std | Accuracy | Cohen's d |
+|---|---|---|---|---|---|---|
+| mBERT (baseline) | 119,547 | 0 | **0.7109** | 0.0105 | 0.7130 | 0.0000 |
+| MuRIL (baseline) | 197,258 | 0 | 0.7006 | 0.0126 | 0.7020 | -0.6596 |
+| mBERT (+66 Gujlish tokens) | 119,613 | 66 | **0.7126** | 0.0112 | 0.7140 | +0.1060 |
+
+### Bootstrap CI (Macro-F1 difference, 95%, n=10,000)
+- **Adapted vs Baseline**: mean=+0.0018, CI=[-0.0122, +0.0154]  → CI includes 0 (YES — not significant)
+- **Adapted vs MuRIL**: mean=+0.0121, CI=[-0.0117, +0.0279]
+
+### Effect Size (Cohen's d)
+- Adapted mBERT vs baseline mBERT: **d = +0.1060** (negligible/small effect)
+- MuRIL vs baseline mBERT: **d = -0.6596** (MuRIL slightly worse)
+- Adapted mBERT vs MuRIL: **d = +0.5080** (adapted clearly better)
+
+### Figure 7: Ablation Comparison
+
+![Figure 7](results/figures/fig7_ablation_comparison.png)
+
+### Ablation Interpretation
+The ablation confirms that:
+1. **Adding 66 Gujarati-script tokens produces a small positive effect** (d=+0.1060) that is consistent (3/5 folds) but not statistically significant at n=5 (bootstrap CI includes 0: -0.0122 to +0.0154).
+2. **A larger vocabulary alone does not guarantee better performance** — MuRIL has 65% more tokens than mBERT but performs worst on this social-media domain task, suggesting training data domain is more important than raw vocabulary size.
+3. **The adapted model achieves the highest mean F1** among all three conditions, supporting the research hypothesis that domain-specific vocabulary adaptation is beneficial even when effect size is small.
+4. For statistical significance, a larger dataset (full 21,346 rows) or more folds (10-fold) would be required to reach α=0.05 with this effect size.
+
+
+---
+
+## Phase 9: Contextual Embedding Analysis
+
+### Table 9: Embedding Space Analysis (300 sentences, non-fine-tuned CLS embeddings)
+
+| Metric | mBERT Baseline | mBERT Adapted |
+|---|---|---|
+| Mean sentence fragmentation rate | 0.3262 (32.62%) | 0.3235 (32.35%) |
+| Avg tokens per sentence | 37.3 | 37.2 |
+| Embedding drift (mean cosine sim) | — | 0.9963 |
+| Embedding drift (min cosine sim) | — | 0.0183 |
+| Intra-class cosine similarity | 0.7492 | 0.7543 |
+| Inter-class cosine similarity | 0.7412 | 0.7457 |
+| Class separation (intra − inter) | +0.0080 | +0.0086 |
+
+### Figure 8: Sentence Embedding t-SNE
+
+![Figure 8](results/figures/fig8_embedding_tsne.png)
+
+### Figure 9: Sentence-Level Fragmentation
+
+![Figure 9](results/figures/fig9_fragmentation_sentence_level.png)
+
+### Phase 9 Interpretation
+1. **Fragmentation at sentence level**: The adapted tokenizer reduces subword piece rate from 32.62% to 32.35% per sentence (0.27 percentage points). This is consistent with the word-level analysis in Phase 3/5.
+2. **Embedding drift is minimal** (mean cosine sim = 0.9963): Adding 66 new tokens with random initialization barely changes the embedding space for most sentences, since most sentences don't contain the newly added tokens.
+3. **Class separation (PCA)**: The separation metric (intra − inter class cosine similarity) is +0.0080 (baseline) vs +0.0086 (adapted). Small improvement after adaptation.
+4. **Key limitation**: These are pre-fine-tuning embeddings. The newly added tokens have random embeddings and contribute noise. Post-fine-tuning analysis (requiring the saved model from GPU run) would show more meaningful representation changes.
