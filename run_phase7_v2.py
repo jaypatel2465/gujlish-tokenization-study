@@ -85,25 +85,31 @@ print(f"\n[2/6] Loading dataset...")
 
 DATA_PROCESSED = ROOT / "data" / "processed"
 
-# Priority: expanded (50k+) > filtered_clean (21k) > dev_subset (3k) > HuggingFace
-EXPANDED       = DATA_PROCESSED / "combined_full_dataset.csv"  # after Option C scraping
-FULL_DATASET   = DATA_PROCESSED / "filtered_clean.csv"          # 21,346 rows — primary
-DEV_SUBSET     = DATA_PROCESSED / "dev_subset.csv"              # 3,000 rows — fallback
+# Priority: merged 50k dataset > single datasets > huggingface
+DATASET_1 = DATA_PROCESSED / "filtered_clean.csv"
+DATASET_2 = DATA_PROCESSED / "expanded_dev_subset_full.csv"
+DEV_SUBSET = DATA_PROCESSED / "dev_subset.csv"
 
-if EXPANDED.exists():
-    df_raw = pd.read_csv(EXPANDED, encoding='utf-8-sig', low_memory=False)
+frames = []
+if DATASET_1.exists():
+    print(f"  Found {DATASET_1.name}")
+    df1 = pd.read_csv(DATASET_1, encoding='utf-8-sig', low_memory=False)
+    frames.append(df1)
+if DATASET_2.exists():
+    print(f"  Found {DATASET_2.name}")
+    df2 = pd.read_csv(DATASET_2, encoding='utf-8-sig', low_memory=False)
+    frames.append(df2)
+
+if len(frames) > 0:
+    df_raw = pd.concat(frames, ignore_index=True)
     col = 'sentiment_label' if 'sentiment_label' in df_raw.columns else 'label'
     df = df_raw[df_raw[col].notna()].copy()
-    dataset_name = "expanded_combined"
-    print(f"  Using EXPANDED dataset: {len(df):,} labeled rows")
-elif FULL_DATASET.exists():
-    df = pd.read_csv(FULL_DATASET, encoding='utf-8-sig', low_memory=False)
-    dataset_name = "filtered_clean_21k"
-    print(f"  Using FULL dataset (filtered_clean.csv): {len(df):,} rows")
+    dataset_name = "merged_50k" if len(frames) > 1 else frames[0].name
+    print(f"  Using combined dataset: {len(df):,} labeled rows")
 elif DEV_SUBSET.exists():
     df = pd.read_csv(DEV_SUBSET, encoding='utf-8', low_memory=False)
     dataset_name = "dev_subset_3000"
-    print(f"  WARNING: Using 3k dev_subset — filtered_clean.csv not found")
+    print(f"  WARNING: Using 3k dev_subset — full dataset not found")
 else:
     print("  No local dataset found — downloading from HuggingFace...")
     from datasets import load_dataset
