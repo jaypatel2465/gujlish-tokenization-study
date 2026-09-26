@@ -46,7 +46,7 @@ import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 print("=" * 65)
-print("  PHASE 7 v2 — Full 21k Dataset + Class-Weighted Loss")
+print("  PHASE 7 v2 — 50k Dataset + 552-Token Adapted mBERT")
 print("=" * 65)
 
 # ── GPU Check ────────────────────────────────────────────────────────────────
@@ -160,15 +160,23 @@ MODELS_TO_EVAL = [
     },
     {
         "name":        "mBERT_adapted",
-        "model_path":  str(MODELS_DIR / "mbert_adapted"),
-        "label":       "mBERT (adapted, 75 tokens)",
+        "model_path":  str(MODELS_DIR / "mbert_adapted_500"),
+        "label":       "mBERT (adapted, 552 tokens)",
         "color":       "#53d8fb",
     },
 ]
 
-# Skip adapted model if not present
-if not (MODELS_DIR / "mbert_adapted").exists():
-    print("\n  NOTE: mbert_adapted not found — skipping adapted model")
+# Skip adapted model if not present — check 500-token version first, fall back to 75-token
+if (MODELS_DIR / "mbert_adapted_500").exists():
+    pass  # already set above
+elif (MODELS_DIR / "mbert_adapted").exists():
+    print("\n  NOTE: mbert_adapted_500 not found — falling back to 75-token mbert_adapted")
+    for m in MODELS_TO_EVAL:
+        if m['name'] == 'mBERT_adapted':
+            m['model_path'] = str(MODELS_DIR / "mbert_adapted")
+            m['label'] = "mBERT (adapted, 75 tokens)"
+else:
+    print("\n  NOTE: No adapted model found — skipping")
     MODELS_TO_EVAL = [m for m in MODELS_TO_EVAL if m['name'] != 'mBERT_adapted']
 
 print(f"\n[3/6] Models to evaluate:")
