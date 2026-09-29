@@ -145,6 +145,26 @@ for lbl, idx in label2id.items():
 
 # ── Model registry ────────────────────────────────────────────────────────────
 MODELS_DIR = ROOT / "models"
+
+# Auto-select best available adapted model:
+#   Priority: mbert_adapted_mlm (MLM pre-trained) > mbert_adapted_500 (646 tokens) > mbert_adapted (75 tokens)
+if (MODELS_DIR / "mbert_adapted_mlm").exists():
+    adapted_path  = str(MODELS_DIR / "mbert_adapted_mlm")
+    adapted_label = "mBERT (adapted+MLM, 646 tokens)"
+    print("\n  Using MLM pre-trained adapted model: mbert_adapted_mlm")
+elif (MODELS_DIR / "mbert_adapted_500").exists():
+    adapted_path  = str(MODELS_DIR / "mbert_adapted_500")
+    adapted_label = "mBERT (adapted, 646 tokens)"
+    print("\n  Using 646-token adapted model: mbert_adapted_500")
+elif (MODELS_DIR / "mbert_adapted").exists():
+    adapted_path  = str(MODELS_DIR / "mbert_adapted")
+    adapted_label = "mBERT (adapted, 75 tokens)"
+    print("\n  Using 75-token adapted model: mbert_adapted")
+else:
+    adapted_path  = None
+    adapted_label = None
+    print("\n  NOTE: No adapted model found — will skip adapted model")
+
 MODELS_TO_EVAL = [
     {
         "name":        "mBERT_baseline",
@@ -158,26 +178,14 @@ MODELS_TO_EVAL = [
         "label":       "MuRIL (baseline)",
         "color":       "#0f3460",
     },
-    {
-        "name":        "mBERT_adapted",
-        "model_path":  str(MODELS_DIR / "mbert_adapted_500"),
-        "label":       "mBERT (adapted, 552 tokens)",
-        "color":       "#53d8fb",
-    },
 ]
-
-# Skip adapted model if not present — check 500-token version first, fall back to 75-token
-if (MODELS_DIR / "mbert_adapted_500").exists():
-    pass  # already set above
-elif (MODELS_DIR / "mbert_adapted").exists():
-    print("\n  NOTE: mbert_adapted_500 not found — falling back to 75-token mbert_adapted")
-    for m in MODELS_TO_EVAL:
-        if m['name'] == 'mBERT_adapted':
-            m['model_path'] = str(MODELS_DIR / "mbert_adapted")
-            m['label'] = "mBERT (adapted, 75 tokens)"
-else:
-    print("\n  NOTE: No adapted model found — skipping")
-    MODELS_TO_EVAL = [m for m in MODELS_TO_EVAL if m['name'] != 'mBERT_adapted']
+if adapted_path:
+    MODELS_TO_EVAL.append({
+        "name":        "mBERT_adapted",
+        "model_path":  adapted_path,
+        "label":       adapted_label,
+        "color":       "#53d8fb",
+    })
 
 print(f"\n[3/6] Models to evaluate:")
 for m in MODELS_TO_EVAL:
