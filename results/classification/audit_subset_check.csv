@@ -1,0 +1,4 @@
+model,n_matched,audit_accuracy,audit_macro_f1,full_accuracy
+mBERT baseline,150,0.6933,0.6806,0.7586
+MuRIL baseline,150,0.6133,0.598,0.7362
+mBERT 798-tok + MLM,150,0.76,0.7573,0.7644

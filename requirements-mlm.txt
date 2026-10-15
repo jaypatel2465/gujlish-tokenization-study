@@ -1,0 +1,14 @@
+# Environment for training/build_obpe_base.py and training/mlm_pretrain.py
+# (originally run on Kaggle, single NVIDIA Tesla T4).
+# mlm_pretrain.py checks for exactly transformers==4.57.6 and stops otherwise.
+#
+#   pip install torch          # CUDA build for your GPU
+#   pip install -r requirements-mlm.txt
+
+transformers==4.57.6
+datasets>=2.15.0,<5.0.0
+accelerate>=1.1.0,<2.0.0
+sentencepiece
+nltk
+pandas>=2.0
+numpy>=1.26

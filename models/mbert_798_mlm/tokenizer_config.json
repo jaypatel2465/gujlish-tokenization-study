@@ -1,0 +1,6440 @@
+{
+  "added_tokens_decoder": {
+    "0": {
+      "content": "[PAD]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "100": {
+      "content": "[UNK]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "101": {
+      "content": "[CLS]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "102": {
+      "content": "[SEP]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "103": {
+      "content": "[MASK]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "119547": {
+      "content": "કિર્તીદાન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119548": {
+      "content": "જોરદાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119549": {
+      "content": "જીગ્નેશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119550": {
+      "content": "અભિનંદન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119551": {
+      "content": "કવિરાજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119552": {
+      "content": "તમારા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119553": {
+      "content": "વિક્રમભાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119554": {
+      "content": "એપિસોડ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119555": {
+      "content": "સોન્ગ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119556": {
+      "content": "જયદીપભાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119557": {
+      "content": "ઠાકોર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119558": {
+      "content": "જીગ્નેશભાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119559": {
+      "content": "માતાજી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119560": {
+      "content": "ભાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119561": {
+      "content": "મહાદેવ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119562": {
+      "content": "સબ્સ્ક્રાઇબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119563": {
+      "content": "મોગલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119564": {
+      "content": "વિક્રમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119565": {
+      "content": "સુપર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119566": {
+      "content": "જીજ્ઞેશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119567": {
+      "content": "પ્રેમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119568": {
+      "content": "આશીર્વાદ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119569": {
+      "content": "સપોર્ટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119570": {
+      "content": "જયદીપ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119571": {
+      "content": "કોમેન્ટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119572": {
+      "content": "જીગા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119573": {
+      "content": "સોનલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119574": {
+      "content": "શબ્દો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119575": {
+      "content": "દ્વારકાધીશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119576": {
+      "content": "કરજો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119577": {
+      "content": "લાઈક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119578": {
+      "content": "રેસિપી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119579": {
+      "content": "સારિકા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119580": {
+      "content": "ચેનલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119581": {
+      "content": "અદ્ભુત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119582": {
+      "content": "તમે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119583": {
+      "content": "શાહબુદ્દીન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119584": {
+      "content": "સુપરહિટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119585": {
+      "content": "વિડિઓ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119586": {
+      "content": "સરસ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119587": {
+      "content": "કોમેડી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119588": {
+      "content": "ભાવના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119589": {
+      "content": "જિંદગી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119590": {
+      "content": "મિત્રો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119591": {
+      "content": "ગીત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119592": {
+      "content": "કૃષ્ણ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119593": {
+      "content": "ખૂબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119594": {
+      "content": "હાર્દિક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119595": {
+      "content": "ફેમિલી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119596": {
+      "content": "વિડિયો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119597": {
+      "content": "સારિકાબેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119598": {
+      "content": "મારા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119599": {
+      "content": "હંમેશા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119600": {
+      "content": "વાહ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119601": {
+      "content": "સોંગ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119602": {
+      "content": "સંધ્યા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119603": {
+      "content": "સાહેબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119604": {
+      "content": "તમારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119605": {
+      "content": "જીગાભાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119606": {
+      "content": "પરિસ્થિતિ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119607": {
+      "content": "સ્પોર્ટ્સ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119608": {
+      "content": "બોલાવો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119609": {
+      "content": "બહુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119610": {
+      "content": "ખુબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119611": {
+      "content": "ખરેખર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119612": {
+      "content": "પ્રાર્થના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119613": {
+      "content": "સંસ્કૃતિ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119614": {
+      "content": "શુભેચ્છા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119615": {
+      "content": "કિર્તીભાઇ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119616": {
+      "content": "ભગવાન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119617": {
+      "content": "બધા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119618": {
+      "content": "રાખજો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119619": {
+      "content": "સુંદર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119620": {
+      "content": "ફિલ્મ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119621": {
+      "content": "વિનંતી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119622": {
+      "content": "વિડીયો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119623": {
+      "content": "એટલે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119624": {
+      "content": "સુવિચાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119625": {
+      "content": "જીંદગી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119626": {
+      "content": "કીર્તિદાન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119627": {
+      "content": "મોજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119628": {
+      "content": "ભાવનાબેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119629": {
+      "content": "ગરબા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119630": {
+      "content": "સાંભળીને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119631": {
+      "content": "અદભુત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119632": {
+      "content": "અમારા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119633": {
+      "content": "સમાજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119634": {
+      "content": "સાંભળી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119635": {
+      "content": "લવારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119636": {
+      "content": "તરફથી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119637": {
+      "content": "તમને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119638": {
+      "content": "તમારો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119639": {
+      "content": "અમે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119640": {
+      "content": "લાગે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119641": {
+      "content": "સાંભળું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119642": {
+      "content": "આલ્બમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119643": {
+      "content": "તમારું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119644": {
+      "content": "સુપરસ્ટાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119645": {
+      "content": "રેસીપી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119646": {
+      "content": "સુરત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119647": {
+      "content": "કહેવાય",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119648": {
+      "content": "સબસ્ક્રાઈબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119649": {
+      "content": "હોસ્પિટલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119650": {
+      "content": "ભાઇ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119651": {
+      "content": "આજે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119652": {
+      "content": "ઈચ્છા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119653": {
+      "content": "વીડિયો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119654": {
+      "content": "દુનિયા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119655": {
+      "content": "સિંગર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119656": {
+      "content": "યાદ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119657": {
+      "content": "સ્પર્શી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119658": {
+      "content": "ભાવનામાસી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119659": {
+      "content": "સાચી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119660": {
+      "content": "બહુજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119661": {
+      "content": "મમ્મી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119662": {
+      "content": "મસ્ત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119663": {
+      "content": "પ્રોગ્રામ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119664": {
+      "content": "શુભેચ્છાઓ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119665": {
+      "content": "જય",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119666": {
+      "content": "રામાપીર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119667": {
+      "content": "ધન્યવાદ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119668": {
+      "content": "બ્લોગ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119669": {
+      "content": "ખુબજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119670": {
+      "content": "રાખે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119671": {
+      "content": "અવાજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119672": {
+      "content": "ફેવરિટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119673": {
+      "content": "રણછોડ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119674": {
+      "content": "જીવન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119675": {
+      "content": "રાખો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119676": {
+      "content": "બનાવ્યું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119677": {
+      "content": "નરેન્દ્ર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119678": {
+      "content": "બારોટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119679": {
+      "content": "ક્રિષ્ના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119680": {
+      "content": "વધારે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119681": {
+      "content": "મહેનત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119682": {
+      "content": "હાવજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119683": {
+      "content": "ચાલુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119684": {
+      "content": "લાઇક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119685": {
+      "content": "પ્લીઝ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119686": {
+      "content": "આભાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119687": {
+      "content": "બાકી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119688": {
+      "content": "સાંભળવા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119689": {
+      "content": "પપ્પા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119690": {
+      "content": "બનાવો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119691": {
+      "content": "ગમે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119692": {
+      "content": "ગઢવી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119693": {
+      "content": "મેં",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119694": {
+      "content": "સાચું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119695": {
+      "content": "શબ્દ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119696": {
+      "content": "સંગીત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119697": {
+      "content": "મોટો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119698": {
+      "content": "બાદશાહ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119699": {
+      "content": "ટાઈગર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119700": {
+      "content": "દિલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119701": {
+      "content": "ઉપર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119702": {
+      "content": "હિંડોળા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119703": {
+      "content": "માસી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119704": {
+      "content": "સારું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119705": {
+      "content": "અલગ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119706": {
+      "content": "છીએ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119707": {
+      "content": "ફોટો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119708": {
+      "content": "ભાષા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119709": {
+      "content": "વાળા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119710": {
+      "content": "સારા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119711": {
+      "content": "ભજન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119712": {
+      "content": "પ્રમાણે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119713": {
+      "content": "હિન્દી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119714": {
+      "content": "નો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119715": {
+      "content": "જરૂર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119716": {
+      "content": "ઠાકર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119717": {
+      "content": "આનંદ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119718": {
+      "content": "ખુશી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119719": {
+      "content": "કલાકારો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119720": {
+      "content": "રાખી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119721": {
+      "content": "આપજો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119722": {
+      "content": "પહોંચી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119723": {
+      "content": "ગીતો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119724": {
+      "content": "કાઠિયાવાડી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119725": {
+      "content": "હિંગળાજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119726": {
+      "content": "દ્રારકાધીશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119727": {
+      "content": "મા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119728": {
+      "content": "રહો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119729": {
+      "content": "અમને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119730": {
+      "content": "નહિ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119731": {
+      "content": "પાણી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119732": {
+      "content": "ખુશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119733": {
+      "content": "કારણ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119734": {
+      "content": "સાચો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119735": {
+      "content": "સપોટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119736": {
+      "content": "અંદર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119737": {
+      "content": "એટલું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119738": {
+      "content": "બેવફા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119739": {
+      "content": "હા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119740": {
+      "content": "બોવ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119741": {
+      "content": "આવશે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119742": {
+      "content": "કોણ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119743": {
+      "content": "સમય",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119744": {
+      "content": "દોસ્તી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119745": {
+      "content": "સાંભળ્યા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119746": {
+      "content": "કનિષ્ક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119747": {
+      "content": "ચેનલને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119748": {
+      "content": "સોમનાથ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119749": {
+      "content": "સ્વભાવ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119750": {
+      "content": "પ્રેરણા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119751": {
+      "content": "એનિમલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119752": {
+      "content": "મારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119753": {
+      "content": "ક્યારેય",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119754": {
+      "content": "જલ્દી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119755": {
+      "content": "રાધા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119756": {
+      "content": "જરૂરી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119757": {
+      "content": "બીજું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119758": {
+      "content": "દર્શન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119759": {
+      "content": "કંઈક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119760": {
+      "content": "કૃપા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119761": {
+      "content": "મને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119762": {
+      "content": "બનાવી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119763": {
+      "content": "જોવાની",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119764": {
+      "content": "કરો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119765": {
+      "content": "અમારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119766": {
+      "content": "જોયા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119767": {
+      "content": "જોઈએ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119768": {
+      "content": "બધું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119769": {
+      "content": "કોઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119770": {
+      "content": "નું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119771": {
+      "content": "ગુજરાતી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119772": {
+      "content": "વચ્ચે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119773": {
+      "content": "બનાવવા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119774": {
+      "content": "સુરતી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119775": {
+      "content": "વાલીડા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119776": {
+      "content": "દેખાય",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119777": {
+      "content": "ગૌરવ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119778": {
+      "content": "જોઈને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119779": {
+      "content": "આપો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119780": {
+      "content": "હિટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119781": {
+      "content": "હું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119782": {
+      "content": "મૂવી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119783": {
+      "content": "બાપ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119784": {
+      "content": "રખેવાળ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119785": {
+      "content": "અદભૂત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119786": {
+      "content": "પરફેક્ટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119787": {
+      "content": "જીગનેશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119788": {
+      "content": "દેવરાજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119789": {
+      "content": "સાંભળો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119790": {
+      "content": "જણાવશો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119791": {
+      "content": "બતાવજો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119792": {
+      "content": "મીઠાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119793": {
+      "content": "રાઠોડ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119794": {
+      "content": "શીતલબેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119795": {
+      "content": "રવિન્દ્ર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119796": {
+      "content": "પ્રસ્તુતિ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119797": {
+      "content": "ડિજિટલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119798": {
+      "content": "મુરલીધર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119799": {
+      "content": "છો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119800": {
+      "content": "આગળ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119801": {
+      "content": "બનાવે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119802": {
+      "content": "આપણે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119803": {
+      "content": "બિલકુલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119804": {
+      "content": "હફતાખોર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119805": {
+      "content": "શ્રીકૃષ્ણ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119806": {
+      "content": "જાય",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119807": {
+      "content": "જીગરા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119808": {
+      "content": "બાજુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119809": {
+      "content": "હમણાં",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119810": {
+      "content": "યાદો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119811": {
+      "content": "દીધું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119812": {
+      "content": "થોડું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119813": {
+      "content": "દોસ્ત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119814": {
+      "content": "હોત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119815": {
+      "content": "ફૂલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119816": {
+      "content": "પરિવાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119817": {
+      "content": "છું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119818": {
+      "content": "મજા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119819": {
+      "content": "વાત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119820": {
+      "content": "ક્યારે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119821": {
+      "content": "કરું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119822": {
+      "content": "શેર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119823": {
+      "content": "બીજા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119824": {
+      "content": "દરેક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119825": {
+      "content": "વિના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119826": {
+      "content": "જીગર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119827": {
+      "content": "એકદમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119828": {
+      "content": "બાબારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119829": {
+      "content": "કાઢી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119830": {
+      "content": "કેટલું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119831": {
+      "content": "મસ્તી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119832": {
+      "content": "કમેન્ટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119833": {
+      "content": "બાપુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119834": {
+      "content": "વખતે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119835": {
+      "content": "બધાને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119836": {
+      "content": "રંગીલા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119837": {
+      "content": "અત્યારે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119838": {
+      "content": "હો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119839": {
+      "content": "ફુલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119840": {
+      "content": "કોને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119841": {
+      "content": "ફેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119842": {
+      "content": "ધ્યાન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119843": {
+      "content": "વાલા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119844": {
+      "content": "કલાકાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119845": {
+      "content": "ગમ્યું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119846": {
+      "content": "લાવો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119847": {
+      "content": "ચાલે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119848": {
+      "content": "જમાવટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119849": {
+      "content": "જબરજસ્ત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119850": {
+      "content": "સ્પોટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119851": {
+      "content": "કુટુંબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119852": {
+      "content": "રાખજે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119853": {
+      "content": "કુદરત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119854": {
+      "content": "પ્રાથના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119855": {
+      "content": "જીગરદાન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119856": {
+      "content": "સરસ્વતી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119857": {
+      "content": "વરસાદ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119858": {
+      "content": "ભૂમિકા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119859": {
+      "content": "દોસ્તો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119860": {
+      "content": "સ્ટેટસ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119861": {
+      "content": "સાંભળતા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119862": {
+      "content": "મંદિર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119863": {
+      "content": "શરૂઆત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119864": {
+      "content": "જોબનીયા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119865": {
+      "content": "જયદિપ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119866": {
+      "content": "આઇ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119867": {
+      "content": "મારું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119868": {
+      "content": "બનાવતા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119869": {
+      "content": "એમના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119870": {
+      "content": "પહેલા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119871": {
+      "content": "રોબિનભાઇ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119872": {
+      "content": "ટાઇગર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119873": {
+      "content": "બનાવ્યા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119874": {
+      "content": "પોતે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119875": {
+      "content": "દિનેશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119876": {
+      "content": "મશીન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119877": {
+      "content": "દીધા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119878": {
+      "content": "આપશો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119879": {
+      "content": "છોકરા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119880": {
+      "content": "વસ્તુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119881": {
+      "content": "હાટુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119882": {
+      "content": "બાપા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119883": {
+      "content": "સબસ્ક્રાઇબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119884": {
+      "content": "દુઃખ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119885": {
+      "content": "વિહત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119886": {
+      "content": "વાંચી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119887": {
+      "content": "સ્વામિનારાયણ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119888": {
+      "content": "બન્ને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119889": {
+      "content": "અત્યાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119890": {
+      "content": "રહેજો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119891": {
+      "content": "બનાવીને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119892": {
+      "content": "નોટિફિકેશન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119893": {
+      "content": "કોફી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119894": {
+      "content": "તમારે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119895": {
+      "content": "બદલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119896": {
+      "content": "વાતો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119897": {
+      "content": "એમની",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119898": {
+      "content": "એમને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119899": {
+      "content": "રાહ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119900": {
+      "content": "કર્યા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119901": {
+      "content": "રાજી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119902": {
+      "content": "લોટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119903": {
+      "content": "નંબર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119904": {
+      "content": "બીજી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119905": {
+      "content": "દાદા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119906": {
+      "content": "હાથ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119907": {
+      "content": "કાકા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119908": {
+      "content": "હવે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119909": {
+      "content": "બેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119910": {
+      "content": "શ્રી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119911": {
+      "content": "વાર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119912": {
+      "content": "ગયા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119913": {
+      "content": "આટલું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119914": {
+      "content": "મેલડી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119915": {
+      "content": "રાખું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119916": {
+      "content": "ટાઈમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119917": {
+      "content": "એક્ટિંગ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119918": {
+      "content": "સોનબાઇ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119919": {
+      "content": "સ્ટોરી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119920": {
+      "content": "પાછા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119921": {
+      "content": "સારીકા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119922": {
+      "content": "આખો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119923": {
+      "content": "ભેળીયાવાળી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119924": {
+      "content": "પાસે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119925": {
+      "content": "લીધે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119926": {
+      "content": "ખોડલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119927": {
+      "content": "મનોરંજન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119928": {
+      "content": "દિલથી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119929": {
+      "content": "વાલમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119930": {
+      "content": "આવતી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119931": {
+      "content": "છોકરી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119932": {
+      "content": "નશીબ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119933": {
+      "content": "શ્રેષ્ઠ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119934": {
+      "content": "શુભકામના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119935": {
+      "content": "આશીક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119936": {
+      "content": "તમારુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119937": {
+      "content": "અપલોડ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119938": {
+      "content": "સાચે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119939": {
+      "content": "અદ્ભૂત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119940": {
+      "content": "માયાભાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119941": {
+      "content": "સોનબાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119942": {
+      "content": "કીર્તિ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119943": {
+      "content": "ભાઈઓ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119944": {
+      "content": "સ્પોર્ટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119945": {
+      "content": "શાક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119946": {
+      "content": "કાઠિયાવાડ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119947": {
+      "content": "જ્યોતિબેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119948": {
+      "content": "વ્લોગ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119949": {
+      "content": "સારીકાબેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119950": {
+      "content": "ગઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119951": {
+      "content": "સે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119952": {
+      "content": "પડે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119953": {
+      "content": "શું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119954": {
+      "content": "વખત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119955": {
+      "content": "આખી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119956": {
+      "content": "રીત",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119957": {
+      "content": "બંધ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119958": {
+      "content": "જોઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119959": {
+      "content": "કામ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119960": {
+      "content": "માવતર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119961": {
+      "content": "જીવનમાં",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119962": {
+      "content": "ચોક્કસ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119963": {
+      "content": "બનાવજો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119964": {
+      "content": "સંસ્કારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119965": {
+      "content": "બોલાવવા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119966": {
+      "content": "સીતારામ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119967": {
+      "content": "મીત્રો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119968": {
+      "content": "સ્ટેટ્સ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119969": {
+      "content": "માલધારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119970": {
+      "content": "હેપ્પી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119971": {
+      "content": "અમદાવાદ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119972": {
+      "content": "પ્રફુલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119973": {
+      "content": "ઢોકળા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119974": {
+      "content": "છોકરાઓ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119975": {
+      "content": "નહીં",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119976": {
+      "content": "નુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119977": {
+      "content": "તરફ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119978": {
+      "content": "મોદી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119979": {
+      "content": "દીદી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119980": {
+      "content": "જીવ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119981": {
+      "content": "રહ્યા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119982": {
+      "content": "પટેલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119983": {
+      "content": "કેમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119984": {
+      "content": "રે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119985": {
+      "content": "દિવસ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119986": {
+      "content": "મારે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119987": {
+      "content": "એને",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119988": {
+      "content": "જગ્યાએ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119989": {
+      "content": "કરશો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119990": {
+      "content": "લીધા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119991": {
+      "content": "ચાહકો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119992": {
+      "content": "રુપિયા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119993": {
+      "content": "બનાવીએ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119994": {
+      "content": "બનાવીશ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119995": {
+      "content": "પાછળ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119996": {
+      "content": "આંખો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119997": {
+      "content": "ખોટું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119998": {
+      "content": "બોલ્યા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "119999": {
+      "content": "મોકલો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120000": {
+      "content": "ચિંતા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120001": {
+      "content": "બધાજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120002": {
+      "content": "ફજેતો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120003": {
+      "content": "શીખવા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120004": {
+      "content": "એંધાણ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120005": {
+      "content": "ખાવાનું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120006": {
+      "content": "હેઝલ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120007": {
+      "content": "ક્યારેક",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120008": {
+      "content": "લેજો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120009": {
+      "content": "લેનારી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120010": {
+      "content": "તમારાં",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120011": {
+      "content": "સિવાય",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120012": {
+      "content": "વિચારો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120013": {
+      "content": "ચામુંડા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120014": {
+      "content": "સાવજ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120015": {
+      "content": "કીધું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120016": {
+      "content": "પૈસા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120017": {
+      "content": "મહિના",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120018": {
+      "content": "દીકરી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120019": {
+      "content": "સ્વીટ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120020": {
+      "content": "વગર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120021": {
+      "content": "ખબર",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120022": {
+      "content": "જોતા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120023": {
+      "content": "કરવું",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120024": {
+      "content": "નાખી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120025": {
+      "content": "કરશે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120026": {
+      "content": "થોડા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120027": {
+      "content": "ટીમ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120028": {
+      "content": "ઘટે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120029": {
+      "content": "જોડે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120030": {
+      "content": "માણસ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120031": {
+      "content": "મળશે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120032": {
+      "content": "કાલે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120033": {
+      "content": "બોલો",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120034": {
+      "content": "આપણા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120035": {
+      "content": "પડશે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120036": {
+      "content": "મારુ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120037": {
+      "content": "આખા",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120038": {
+      "content": "કેમકે",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120039": {
+      "content": "જીતુભાઈ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120040": {
+      "content": "બોલિવૂડ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120041": {
+      "content": "સંધ્યાબેન",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120042": {
+      "content": "જન્માષ્ટમી",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120043": {
+      "content": "આશિર્વાદ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120044": {
+      "content": "પોઝિટિવ",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120045": {
+      "content": "jaydeepbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120046": {
+      "content": "bhuvaji",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120047": {
+      "content": "jignesh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120048": {
+      "content": "kirtidanbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120049": {
+      "content": "jigneshbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120050": {
+      "content": "jaydeep",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120051": {
+      "content": "ma'am",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120052": {
+      "content": "dwarkadhish",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120053": {
+      "content": "kirtidan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120054": {
+      "content": "vikrambhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120055": {
+      "content": "kirtibhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120056": {
+      "content": "bhagwan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120057": {
+      "content": "bhagvan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120058": {
+      "content": "bhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120059": {
+      "content": "kaviraj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120060": {
+      "content": "bhavin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120061": {
+      "content": "bahuj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120062": {
+      "content": "gujarat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120063": {
+      "content": "mananbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120064": {
+      "content": "abhinandan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120065": {
+      "content": "gadhvi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120066": {
+      "content": "jaydipbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120067": {
+      "content": "mujhe",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120068": {
+      "content": "aapki",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120069": {
+      "content": "bhajan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120070": {
+      "content": "bhavna",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120071": {
+      "content": "it's",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120072": {
+      "content": "swaminarayan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120073": {
+      "content": "kharekhar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120074": {
+      "content": "khodiyar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120075": {
+      "content": "vadhare",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120076": {
+      "content": "mahadev",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120077": {
+      "content": "khabar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120078": {
+      "content": "ghansyam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120079": {
+      "content": "congratulations",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120080": {
+      "content": "jarur",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120081": {
+      "content": "don't",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120082": {
+      "content": "jdbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120083": {
+      "content": "gujrat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120084": {
+      "content": "wahhh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120085": {
+      "content": "hardikbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120086": {
+      "content": "sara's",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120087": {
+      "content": "visbhujari",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120088": {
+      "content": "chhe",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120089": {
+      "content": "recipes",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120090": {
+      "content": "mogal",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120091": {
+      "content": "moj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120092": {
+      "content": "goosebumps",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120093": {
+      "content": "aavse",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120094": {
+      "content": "i'm",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120095": {
+      "content": "aapke",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120096": {
+      "content": "rajeshwari",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120097": {
+      "content": "mumbai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120098": {
+      "content": "chirayu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120099": {
+      "content": "vikram",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120100": {
+      "content": "gujju",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120101": {
+      "content": "suvichar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120102": {
+      "content": "bhumi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120103": {
+      "content": "dharmesh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120104": {
+      "content": "saras",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120105": {
+      "content": "jigarbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120106": {
+      "content": "jiganesh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120107": {
+      "content": "jaidepbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120108": {
+      "content": "vlogs",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120109": {
+      "content": "jigabhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120110": {
+      "content": "subscribers",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120111": {
+      "content": "gadhavi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120112": {
+      "content": "aapko",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120113": {
+      "content": "navratri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120114": {
+      "content": "khubaj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120115": {
+      "content": "nathi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120116": {
+      "content": "somnath",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120117": {
+      "content": "bhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120118": {
+      "content": "kabhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120119": {
+      "content": "jigrra",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120120": {
+      "content": "bhavsu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120121": {
+      "content": "khub",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120122": {
+      "content": "thakor",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120123": {
+      "content": "sarika",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120124": {
+      "content": "aap",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120125": {
+      "content": "mojjj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120126": {
+      "content": "bhabhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120127": {
+      "content": "jalaram",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120128": {
+      "content": "sandiyabhabhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120129": {
+      "content": "mojjjj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120130": {
+      "content": "hamesha",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120131": {
+      "content": "mojj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120132": {
+      "content": "bhavnamasi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120133": {
+      "content": "bhanushali",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120134": {
+      "content": "bapaji",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120135": {
+      "content": "sonal",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120136": {
+      "content": "mataji",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120137": {
+      "content": "abhishek",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120138": {
+      "content": "kanishk",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120139": {
+      "content": "kharab",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120140": {
+      "content": "vlog",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120141": {
+      "content": "jyare",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120142": {
+      "content": "kya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120143": {
+      "content": "bhavnagar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120144": {
+      "content": "chhathi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120145": {
+      "content": "ahmedabad",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120146": {
+      "content": "sarikaben",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120147": {
+      "content": "tamari",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120148": {
+      "content": "sarikabhabhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120149": {
+      "content": "jordar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120150": {
+      "content": "jiga",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120151": {
+      "content": "sabji",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120152": {
+      "content": "suvichre",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120153": {
+      "content": "kedarnath",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120154": {
+      "content": "bhuj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120155": {
+      "content": "mehnat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120156": {
+      "content": "lavari",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120157": {
+      "content": "bhajiya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120158": {
+      "content": "rajkot",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120159": {
+      "content": "badha",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120160": {
+      "content": "bhumika",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120161": {
+      "content": "jaydip",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120162": {
+      "content": "can't",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120163": {
+      "content": "gajab",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120164": {
+      "content": "chamunda",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120165": {
+      "content": "kidhu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120166": {
+      "content": "jigardan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120167": {
+      "content": "bollywood",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120168": {
+      "content": "bhavin's",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120169": {
+      "content": "wahhhh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120170": {
+      "content": "kathiyavadi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120171": {
+      "content": "bahu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120172": {
+      "content": "chahiye",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120173": {
+      "content": "bharat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120174": {
+      "content": "yummyyyy",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120175": {
+      "content": "aave",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120176": {
+      "content": "dhyan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120177": {
+      "content": "wahh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120178": {
+      "content": "manan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120179": {
+      "content": "hinglaj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120180": {
+      "content": "aavi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120181": {
+      "content": "banavyu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120182": {
+      "content": "mashup",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120183": {
+      "content": "didi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120184": {
+      "content": "bhagat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120185": {
+      "content": "atyare",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120186": {
+      "content": "khava",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120187": {
+      "content": "ramdevpir",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120188": {
+      "content": "tcf",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120189": {
+      "content": "dikri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120190": {
+      "content": "saru",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120191": {
+      "content": "sandhya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120192": {
+      "content": "banavta",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120193": {
+      "content": "bhaiya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120194": {
+      "content": "pachhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120195": {
+      "content": "aapde",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120196": {
+      "content": "khodal",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120197": {
+      "content": "dwarikadhish",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120198": {
+      "content": "gamyu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120199": {
+      "content": "bhavnaben",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120200": {
+      "content": "teentigada",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120201": {
+      "content": "receipe",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120202": {
+      "content": "ghar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120203": {
+      "content": "badhiya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120204": {
+      "content": "sathe",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120205": {
+      "content": "gajjab",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120206": {
+      "content": "tmkoc",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120207": {
+      "content": "vahhh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120208": {
+      "content": "tamne",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120209": {
+      "content": "aavti",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120210": {
+      "content": "chakkazam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120211": {
+      "content": "banavya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120212": {
+      "content": "mojjjjj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120213": {
+      "content": "rajeshwri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120214": {
+      "content": "nhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120215": {
+      "content": "karvanu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120216": {
+      "content": "khoob",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120217": {
+      "content": "khate",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120218": {
+      "content": "aavya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120219": {
+      "content": "kuchh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120220": {
+      "content": "pyaar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120221": {
+      "content": "bhaguda",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120222": {
+      "content": "toh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120223": {
+      "content": "pandya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120224": {
+      "content": "aashirwad",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120225": {
+      "content": "tamaro",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120226": {
+      "content": "badshah",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120227": {
+      "content": "pachi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120228": {
+      "content": "you're",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120229": {
+      "content": "that's",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120230": {
+      "content": "jaideep",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120231": {
+      "content": "bewafa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120232": {
+      "content": "maharashtra",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120233": {
+      "content": "ashwinbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120234": {
+      "content": "loko",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120235": {
+      "content": "khubj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120236": {
+      "content": "jyoti",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120237": {
+      "content": "kyare",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120238": {
+      "content": "karta",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120239": {
+      "content": "khbr",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120240": {
+      "content": "thankyou",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120241": {
+      "content": "aaj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120242": {
+      "content": "barot",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120243": {
+      "content": "plz",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120244": {
+      "content": "jigraa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120245": {
+      "content": "bovj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120246": {
+      "content": "supar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120247": {
+      "content": "ahemdabad",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120248": {
+      "content": "kirtidanji",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120249": {
+      "content": "rahe",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120250": {
+      "content": "chokkas",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120251": {
+      "content": "prathna",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120252": {
+      "content": "bhavana",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120253": {
+      "content": "vadodara",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120254": {
+      "content": "aavaj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120255": {
+      "content": "banavo",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120256": {
+      "content": "isliye",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120257": {
+      "content": "karamsi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120258": {
+      "content": "vihat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120259": {
+      "content": "jayshree",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120260": {
+      "content": "sambhdva",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120261": {
+      "content": "dwarkadhis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120262": {
+      "content": "shikhwadi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120263": {
+      "content": "bhave",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120264": {
+      "content": "banavyo",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120265": {
+      "content": "aapda",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120266": {
+      "content": "zabardast",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120267": {
+      "content": "vahhhh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120268": {
+      "content": "darshakbhai",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120269": {
+      "content": "hezu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120270": {
+      "content": "joi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120271": {
+      "content": "khotu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120272": {
+      "content": "khavanu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120273": {
+      "content": "london",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120274": {
+      "content": "bhasha",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120275": {
+      "content": "sabse",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120276": {
+      "content": "chhati",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120277": {
+      "content": "mahadevo",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120278": {
+      "content": "hardik",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120279": {
+      "content": "amne",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120280": {
+      "content": "meldi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120281": {
+      "content": "aakho",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120282": {
+      "content": "kyathi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120283": {
+      "content": "tmaro",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120284": {
+      "content": "sambhalva",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120285": {
+      "content": "kathiyawadi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120286": {
+      "content": "bhavanath",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120287": {
+      "content": "melbourne",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120288": {
+      "content": "guys",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120289": {
+      "content": "athanu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120290": {
+      "content": "jaruri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120291": {
+      "content": "bhaii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120292": {
+      "content": "etle",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120293": {
+      "content": "mojjjjjj",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120294": {
+      "content": "liye",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120295": {
+      "content": "dekh",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120296": {
+      "content": "jayega",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120297": {
+      "content": "badhu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120298": {
+      "content": "chho",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120299": {
+      "content": "kirti",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120300": {
+      "content": "rahi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120301": {
+      "content": "sabhi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120302": {
+      "content": "dhanyavad",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120303": {
+      "content": "vakhat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120304": {
+      "content": "aapjo",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120305": {
+      "content": "recepie",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120306": {
+      "content": "bhagavan",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120307": {
+      "content": "maldhari",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120308": {
+      "content": "yaar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120309": {
+      "content": "tamaru",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120310": {
+      "content": "tme",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120311": {
+      "content": "bhu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120312": {
+      "content": "bapu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120313": {
+      "content": "gayu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120314": {
+      "content": "gya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120315": {
+      "content": "ingredients",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120316": {
+      "content": "vakhte",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120317": {
+      "content": "kuldevi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120318": {
+      "content": "raha",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120319": {
+      "content": "ambe",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120320": {
+      "content": "khata",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120321": {
+      "content": "jamnagar",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120322": {
+      "content": "amdavad",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120323": {
+      "content": "kyarek",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120324": {
+      "content": "kyarey",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120325": {
+      "content": "vikramji",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120326": {
+      "content": "ramdev",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120327": {
+      "content": "bnaya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120328": {
+      "content": "visbhujeshwari",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120329": {
+      "content": "garba",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120330": {
+      "content": "kuch",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120331": {
+      "content": "khati",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120332": {
+      "content": "jovanu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120333": {
+      "content": "didn't",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120334": {
+      "content": "aakhu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120335": {
+      "content": "chhath",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120336": {
+      "content": "sachi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120337": {
+      "content": "vaat",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120338": {
+      "content": "karu",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120339": {
+      "content": "volg",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120340": {
+      "content": "alag",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120341": {
+      "content": "tyare",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120342": {
+      "content": "janmashtami",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120343": {
+      "content": "sandhiya",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    },
+    "120344": {
+      "content": "bhaveeksha",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": false
+    }
+  },
+  "clean_up_tokenization_spaces": false,
+  "cls_token": "[CLS]",
+  "do_lower_case": false,
+  "extra_special_tokens": {},
+  "mask_token": "[MASK]",
+  "model_max_length": 512,
+  "pad_token": "[PAD]",
+  "sep_token": "[SEP]",
+  "strip_accents": null,
+  "tokenize_chinese_chars": true,
+  "tokenizer_class": "BertTokenizer",
+  "unk_token": "[UNK]"
+}

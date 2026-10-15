@@ -1,0 +1,4 @@
+model_dir,model,pearson_r,p_value,spearman_rho,spearman_p,n,significant
+mbert_baseline,mBERT (baseline),-0.0676,7.595393611904545e-53,-0.1647,5.477543525925016e-308,51161,True
+muril_baseline,MuRIL (baseline),-0.0597,1.1413933574620775e-41,-0.1584,8.21454932606093e-285,51161,True
+mbert_798_mlm,mBERT 798-tok + MLM,-0.0589,1.411887353393896e-40,-0.1659,0.0,51155,True

@@ -206,9 +206,9 @@ def load_bert_model(model_path: str, name: str):
 baseline_tok, baseline_model = load_bert_model(
     "bert-base-multilingual-cased", "mBERT Baseline"
 )
-adapted_dir = MODELS / "mbert_adapted"
+adapted_dir = MODELS / "mbert_pilot75"
 if not adapted_dir.exists():
-    raise FileNotFoundError("models/mbert_adapted/ not found. Run phase5_vocab_adapt.py first.")
+    raise FileNotFoundError("models/mbert_pilot75/ not found. Run phase5_vocab_adapt.py first.")
 adapted_tok, adapted_model = load_bert_model(
     str(adapted_dir), "mBERT Adapted"
 )

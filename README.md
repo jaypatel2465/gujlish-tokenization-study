@@ -1,154 +1,241 @@
-# Gujlish Tokenization Fragmentation Study
+# Vocabulary Adaptation and Continued MLM Pre-Training for Gujarati-English Code-Mixed Sentiment Analysis
 
-**Paper**: *"Investigating the Impact of Subword Tokenization Fragmentation on Semantic Representation of Gujarati-English Code-Mixed Text"*
+Code, data and result artifacts for the paper
 
-**Status**: ✅ All 9 phases complete
+> D. Patel, J. Patel, R. Kachhia, N. Thakor. *Vocabulary Adaptation and Continued MLM Pre-Training for Gujarati-English Code-Mixed Sentiment Analysis.* G. H. Patel College of Engineering & Technology, The CVM University.
+
+Multilingual models such as mBERT and MuRIL split Gujarati-English code-mixed ("Gujlish") text into many subword pieces. This project measures that fragmentation on a 51,161-sentence Gujarati/Gujlish sentiment corpus. It then tests whether reducing fragmentation helps three-class sentiment classification. The paper compares four models under identical 5-fold cross-validation:
+
+| Model | Vocabulary | Macro-F1 (mean ± SD, 5 folds) | Accuracy |
+|---|---|---|---|
+| mBERT baseline (`bert-base-multilingual-cased`) | 119,547 | 0.7376 ± 0.0042 | 0.7596 |
+| MuRIL baseline (`google/muril-base-cased`) | 197,258 | 0.7141 ± 0.0075 | 0.7372 |
+| mBERT OBPE +498 (no MLM) | 120,045 | 0.7372 ± 0.0046 | 0.7585 |
+| **mBERT 798-token + MLM (ours)** | 120,345 | **0.7456 ± 0.0041** | **0.7652** |
+
+On the 50,827 sentences shared by all runs, the 798-token + MLM model beats the mBERT baseline: McNemar χ² = 11.89, p = 5.6×10⁻⁴, and the bootstrap 95% CI for the macro-F1 difference is [+0.005, +0.011]. Adding 498 tokens *without* continued pre-training gives no gain (p = 0.678).
 
 ---
 
-## 🚀 Quick Start for GPU Collaborators (Phase 7 only)
+## Pipeline
 
-If someone shared this repo with you to run the final experiment on your GPU:
+```
+ Phase 1  Data collection      scripts/phase1_dataset.py, scripts/phase1b_expand_dataset.py
+    │      HF dataset (21,729) + 12 YouTube channels (29,826)
+ Phase 2  Cleaning              scripts/phase2_clean.py            → 21,346 + 29,826 → 51,161 merged
+    │
+ Phase 3  Fragmentation         scripts/phase3_fragmentation.py    → mBERT 79.33% / MuRIL 70.02% of word types split
+    │
+ Phase 4  Vocabulary selection  scripts/phase4_vocab_selection.py  score(w) = log2 f(w) × mBERT pieces(w)
+ Phase 5  Vocabulary adaptation scripts/phase5_vocab_adapt.py      75-token pilot (fragmentation only)
+    │                           training/build_obpe_ablation.py    +498 tokens          → "OBPE +498 (no MLM)"
+    │                           training/build_obpe_base.py        +498 Gujarati tokens ┐
+ Phase 6  MLM pre-training      training/mlm_pretrain.py           +300 Romanized tokens┘ + continued MLM → "798-token + MLM"
+    │
+ Phase 7  Semantic evaluation   scripts/phase6_semantic.py, scripts/phase9_embedding_analysis.py
+    │
+ Phase 8  Classification        training/train_classifier.py       5-fold CV, identical protocol for all 4 models
+    │
+ Phase 9  Statistics            evaluation/evaluate.py, evaluation/significance.py
+```
+
+The script names under `scripts/` keep their original phase numbers. The table under [Paper table → file](#paper-table--file) maps every paper table to the file that produces it.
+
+## Repository layout
+
+```
+├── data/processed/
+│   ├── filtered_clean.csv                 21,346 cleaned sentences (HF source, Phase 2 output)
+│   ├── expanded_dev_subset_full.csv       YouTube expansion, corpus version v1 (→ 51,161 merged)
+│   ├── expanded_dev_subset_full_v2.csv    YouTube expansion, corpus version v2 (→ 51,155 merged, MLM run)
+│   ├── clean_sample_3000.csv              extra sample, part of the MLM pre-training corpus
+│   ├── dev_subset.csv                     3,000-row stratified subset (Phase 2; used by Phase 7 embedding analysis)
+│   ├── human_audit_sample.csv             150-sentence stratified label audit (50 per class)
+│   ├── gujlish_vocab_additions.txt        75-token pilot vocabulary (Phase 4)
+│   └── gujlish_vocab_additions_500.txt    498-token OBPE vocabulary (no-MLM ablation)
+├── scripts/                               Phases 1–5 and 7: data, fragmentation, pilot adaptation, semantics
+├── training/
+│   ├── common.py                          shared 5-fold CV protocol (seed, splits, hyperparameters, outputs)
+│   ├── train_classifier.py                Phase 8 entry point: --model {mbert, muril, obpe, mlm}
+│   ├── build_obpe_ablation.py             builds models/mbert_obpe_ablation (OBPE +498, no MLM)
+│   ├── build_obpe_base.py                 builds models/mbert_obpe_base (498 Gujarati-script tokens)
+│   └── mlm_pretrain.py                    +300 Romanized tokens + continued MLM → models/mbert_798_mlm
+├── evaluation/
+│   ├── evaluate.py                        Tables 5, 9, 13 + figures from saved predictions
+│   ├── significance.py                    Tables 10, 12, 13 (truncation), 14
+│   └── predict.py                         inference with a fine-tuned classifier
+├── models/                                tokenizer/config files only (weights are not in git)
+│   ├── mbert_pilot75/                     75-token pilot (Phases 5 and 7)
+│   ├── mbert_obpe_ablation/               OBPE +498 tokenizer
+│   └── mbert_798_mlm/                     final 798-token tokenizer, token list, MLM metrics
+├── results/
+│   ├── predictions/<model>/               per-fold metrics + per-sentence predictions of the paper runs
+│   ├── classification/                    outputs of evaluation/*.py
+│   ├── tables/, figures/                  outputs of scripts/phase*.py
+├── logs/experiment_log.csv                run log written by the phase scripts
+├── requirements.txt                       main environment
+└── requirements-mlm.txt                   environment for OBPE base building + MLM pre-training
+```
+
+## Setup
+
+Python 3.10+ is required.
 
 ```bash
-# 1. Clone
 git clone https://github.com/jaypatel2465/gujlish-tokenization-study.git
 cd gujlish-tokenization-study
-
-# 2. Install PyTorch with CUDA (visit https://pytorch.org for the exact command for your CUDA version)
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-
-# 3. Install remaining dependencies
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install torch --index-url https://download.pytorch.org/whl/cu121   # or: pip install torch (CPU)
 pip install -r requirements.txt
-
-# 4. Run — that's it!
-python run_phase7.py
 ```
 
-**Expected time**: ~5–15 min on a modern GPU (RTX 3060+), ~4–8 hours on CPU.
+`training/build_obpe_base.py` and `training/mlm_pretrain.py` require `transformers==4.57.6`. Run them in a separate environment built from `requirements-mlm.txt` (they were run on a Kaggle Tesla T4). Everything else uses `requirements.txt` (Transformers ≥ 5).
 
----
+Hugging Face models are cached in `hf_cache/` inside the repository.
 
-## Project Structure
+## Reproducing the reported numbers (no GPU, about 2 minutes)
 
-```
-gujlish-tokenization-study/
-├── run_phase7.py                        # ← GPU collaborator runs THIS
-├── requirements.txt
-├── data/
-│   └── processed/
-│       ├── dev_subset.csv               # 3,000-row subset for Phase 7 ✅
-│       ├── gujlish_vocab_additions.txt  # 66 Gujarati tokens added to mBERT ✅
-│       └── human_audit_sample.csv       # 150-row manual audit sample
-├── scripts/
-│   ├── phase1_dataset.py                # Stage 1: Download + filter
-│   ├── phase2_clean.py                  # Stage 1: Clean dataset
-│   ├── phase3_fragmentation.py          # Stage 2: Fragmentation baseline
-│   ├── phase4_vocab_selection.py        # Stage 2: Gujlish vocab selection
-│   ├── phase5_vocab_adapt.py            # Stage 2: Adapt mBERT tokenizer
-│   ├── phase5b_fragmentation.py         # Stage 2b: Post-adaptation fragmentation
-│   ├── phase6_semantic.py               # Stage 3: Semantic similarity
-│   ├── phase7_classification.py         # Stage 3: Sentiment classification (GPU)
-│   ├── error_analysis.py                # Stage 3: Error & fold analysis
-│   ├── phase8_ablation.py               # Stage 4: Ablation + effect size
-│   └── phase9_embedding_analysis.py     # Stage 4: Contextual embedding analysis
-├── models/
-│   └── mbert_adapted/                   # Adapted tokenizer (config + tokenizer.json)
-├── results/
-│   ├── tables/                          # 13 CSV/JSON tables (all phases)
-│   └── figures/                         # 9 PNG figures (300 dpi)
-├── logs/
-│   └── experiment_log.csv
-├── RESULTS_SUMMARY.md                   # ← Complete paper-ready results
-├── LIMITATIONS.md
-└── Output/                              # Phase 7 GPU run outputs (raw)
-```
+The per-sentence predictions of the paper runs are included in `results/predictions/`, so every classification table can be recomputed on a CPU:
 
----
-
-## Full Pipeline — All 9 Phases
-
-### Stage 1 — Data Foundation
 ```bash
-python scripts/phase1_dataset.py    # Download + filter Gujlish data
-python scripts/phase2_clean.py      # Dedup, spam removal
+python evaluation/evaluate.py       # Tables 5, 9, 13 and figures → results/classification/
+python evaluation/significance.py   # Tables 10, 12, 13 (truncation), 14
 ```
-→ Tables 1-2 | 21,346 clean Gujlish sentences
 
-### Stage 2 — Tokenization & Vocabulary
+Expected output (abridged):
+
+```
+paired rows (present in all 3 runs): 50,827
+McNemar mbert_798_mlm vs mbert_baseline: n10=3807 n01=3511 chi2=11.89 p=5.64e-04
+McNemar mbert_baseline vs muril_baseline: n10=5105 n01=3970 chi2=141.70 p=1.13e-32
+McNemar mbert_798_mlm vs muril_baseline: n10=5345 n01=3914 chi2=220.86 p=5.89e-50
+Bootstrap mbert_798_mlm - mbert_baseline: mean=+0.0081 95% CI [+0.0047, +0.0114]
+Fold t-test mbert_798_mlm vs mbert_baseline: t=4.94 p=0.0078 d=+2.21
+```
+
+The per-sentence predictions of the OBPE +498 (no MLM) run are not part of this repository. Its row in Tables 9, 11 and 12 is as reported in the paper. To recompute it, train it with `--model obpe` (below); `evaluate.py` and `significance.py` include it automatically once `results/predictions/mbert_obpe498_nomlm/` exists.
+
+## Full pipeline
+
+### 1. Data (Phases 1–2)
+
 ```bash
-python scripts/phase3_fragmentation.py    # mBERT vs MuRIL baseline
-python scripts/phase4_vocab_selection.py  # Top Gujarati tokens (freq ≥ 10)
-python scripts/phase5_vocab_adapt.py      # Adapt mBERT (+66 tokens)
-python scripts/phase5b_fragmentation.py   # Re-measure post-adaptation
+python scripts/phase1_dataset.py        # download ShrutiPatel3011/gujarati-english-codemixed-sentiment, filter, audit sample
+python scripts/phase2_clean.py          # dedup + URL/spam filtering → filtered_clean.csv, dev_subset.csv
+python scripts/phase1b_expand_dataset.py   # optional: YouTube Data API v3 collection (needs YOUTUBE_API_KEY)
 ```
-→ Tables 2b-4, Figures 1-3 | mBERT: 79.3% fragmented → 79.2% after adaptation
 
-### Stage 3 — Experiments
+The labelled YouTube expansion used in the paper is shipped as `data/processed/expanded_dev_subset_full*.csv`, so Phase 1b is only needed to collect new comments. Labels are LLM-generated; see the paper (Section 3.2) for the label audit.
+
+**Corpus versions.** The classifier merges `filtered_clean.csv` with one YouTube file and de-duplicates on text:
+
+| Version | YouTube file | Merged sentences | Used by |
+|---|---|---|---|
+| v1 | `expanded_dev_subset_full.csv` | 51,161 | mBERT, MuRIL, OBPE +498 |
+| v2 | `expanded_dev_subset_full_v2.csv` | 51,155 | mBERT 798-token + MLM (pre-training and fine-tuning) |
+
+`train_classifier.py` selects the right version for each model automatically. Paired comparisons use only the 50,827 sentences present in every run (paper Section 3.8).
+
+### 2. Fragmentation and pilot vocabulary (Phases 3–5)
+
 ```bash
-python scripts/phase6_semantic.py         # Semantic similarity (12 word pairs)
-python scripts/phase7_classification.py   # 5-fold CV sentiment classification
-python scripts/error_analysis.py          # Fold analysis + RESULTS_SUMMARY update
+python scripts/phase3_fragmentation.py    # Table 4, Fig. 1; writes word_frequencies.csv / word_piece_counts.csv
+python scripts/phase4_vocab_selection.py  # 75-token pilot selection (freq ≥ 10, ≥ 2 pieces, log2 f × pieces)
+python scripts/phase5_vocab_adapt.py      # pilot model + before/after fragmentation (Table 6 pilot column, Fig. 3)
 ```
-→ Tables 5-7, Figures 4-6 | Best model: mBERT adapted, F1 = 71.26%
 
-### Stage 4 — Analysis & Ablation
+### 3. Adapted models (Phases 5–6)
+
 ```bash
-python scripts/phase8_ablation.py           # Effect size + bootstrap CI
-python scripts/phase9_embedding_analysis.py # t-SNE + sentence-level fragmentation
+# OBPE +498, no MLM (ablation model)
+python training/build_obpe_ablation.py    # → models/mbert_obpe_ablation/
+
+# 798-token + MLM (proposed model) — GPU, requirements-mlm.txt environment
+python training/build_obpe_base.py        # → models/mbert_obpe_base/   (+498 Gujarati-script tokens)
+python training/mlm_pretrain.py           # → models/mbert_798_mlm/     (+300 Romanized tokens, continued MLM)
 ```
-→ Tables 8-9, Figures 7-9 | Cohen's d = +0.106 (adapted vs baseline)
 
----
+New-token embeddings for the Romanized tokens are initialised as the mean of the token's original mBERT subword embeddings. Masking follows the standard BERT protocol (15%; 80/10/10). All other pre-training settings are in the `CFG` class of `training/mlm_pretrain.py`. The selected tokens are recorded in `models/mbert_798_mlm/token_expansion_info.json`.
 
-## Results At-a-Glance
+### 4. Semantic evaluation (Phase 7)
 
-| Table | Content | Key Number |
-|---|---|---|
-| Table 1 | Dataset statistics | 21,346 rows, 58.7% positive |
-| Table 2 | Cleaning report | 13 rows removed (0.06%) |
-| Table 2b | Fragmentation baseline | mBERT 79.3% vs MuRIL 70.0% |
-| Table 3 | Top 20 fragmented words | 66 tokens selected |
-| Table 4 | Before/after adaptation | −1.61% freq-weighted fragmentation |
-| Table 5 | Semantic similarity | p=0.25, not significant (pre-fine-tuning) |
-| Table 6 | Classification results | mBERT adapted **F1=71.26%** (best) |
-| Table 7 | Error/fold analysis | Adapted wins 3/5 folds |
-| Table 8 | Ablation study | Cohen's d=+0.106, Bootstrap CI=[−0.012, +0.015] |
-| Table 9 | Embedding analysis | Drift cos-sim=0.9963, sep improves +0.0006 |
+```bash
+python scripts/phase6_semantic.py            # Table 7, Fig. 4 (12 word pairs, Wilcoxon)
+python scripts/phase9_embedding_analysis.py  # Table 8, Figs. 8–9 (300 sentences)
+```
 
-| Figure | Content |
+### 5. Sentiment classification (Phase 8, GPU)
+
+```bash
+python training/train_classifier.py --model mbert
+python training/train_classifier.py --model muril
+python training/train_classifier.py --model obpe
+python training/train_classifier.py --model mlm
+```
+
+The protocol is identical for every model (`training/common.py`, paper Table 2):
+
+| Setting | Value |
 |---|---|
-| Fig 1 | Subwords-per-word distribution |
-| Fig 2 | Top 20 fragmented Gujlish words |
-| Fig 3 | Fragmentation before/after adaptation |
-| Fig 4 | Semantic similarity before/after |
-| Fig 5 | Model performance comparison (Phase 7) |
-| Fig 6 | Per-fold F1 line chart + delta chart |
-| Fig 7 | Ablation comparison (F1, bootstrap CI, Cohen's d) |
-| Fig 8 | Sentence embedding space (PCA) — baseline vs adapted |
-| Fig 9 | Sentence-level fragmentation distribution |
+| Cross-validation | stratified 5-fold, `random_state=42` |
+| Epochs / batch / lr | 5 / 32 / 2e-5, AdamW (weight decay 0.01), 10% warmup |
+| Max sequence length | 96 |
+| Loss | class-weighted cross-entropy (`compute_class_weight('balanced')`, per fold) |
+| Precision / seed | fp16 on CUDA / 42 |
 
----
+Each run writes `results/predictions/<model>/fold_metrics.csv` and `fold{1..5}_predictions.csv`. Runs are resumable, and completed folds are skipped. Each model can be trained on a different machine; copy its `results/predictions/<model>/` folder back before evaluating.
 
-## Key Parameters
+Useful flags:
 
-| Parameter | Value | Rationale |
+- `--save-models` also saves each fold's classifier to `models/classifiers/<model>/fold<k>/` (needed for inference).
+- `--smoke-test N` runs a quick check on N stratified sentences for 1 epoch. Results go to `results/predictions/smoke_<model>/`.
+- `--model-path` points a variant at another checkpoint (local folder or Hugging Face id).
+
+### 6. Statistics (Phase 9)
+
+```bash
+python evaluation/evaluate.py
+python evaluation/significance.py
+```
+
+### 7. Inference
+
+```bash
+python training/train_classifier.py --model mlm --save-models
+python evaluation/predict.py --model-dir models/classifiers/mbert_798_mlm/fold1 \
+    --text "Ekdum saras song chhe, maja avi gai" "આ વિડિઓ ખૂબ જ સરસ છે"
+python evaluation/predict.py --model-dir models/classifiers/mbert_798_mlm/fold1 \
+    --input-csv comments.csv --output-csv predictions.csv
+```
+
+## Paper table → file
+
+| Paper | Produced by | File |
 |---|---|---|
-| Gujlish dominance filter | `(guj+eng) > 1.5 × hindi` | Ensures clear Gujlish signal |
-| Frequency threshold (Phase 4) | ≥ 10 occurrences | Avoids rare-word noise |
-| Vocabulary additions | 66 tokens (target: 75) | Pool exhausted at 66 |
-| CV folds (Phase 7) | 5-fold stratified | Standard for robust evaluation |
-| Epochs (Phase 7) | 3 (GPU) / 2 (CPU) | Auto-set by device |
-| Batch size (Phase 7) | 8–64 (auto) | Scales with VRAM |
-| FP16 | Enabled on CUDA | ~2× speed |
-| Random seed | 42 | Fixed for reproducibility |
-| Bootstrap samples (Phase 8) | 10,000 | Robust CI estimation |
-| Embedding sample (Phase 9) | 300 (100/class) | CPU-feasible |
+| Table 1 | `scripts/phase1_dataset.py`, `scripts/phase2_clean.py` | `results/tables/table1_dataset_statistics.csv`, `table2_cleaning_report.csv` |
+| Table 4 | `scripts/phase3_fragmentation.py` | `results/tables/table2_fragmentation_baseline.csv` |
+| Table 5 | `evaluation/evaluate.py` | `results/classification/code_mixed_fragmentation_ttest.csv` |
+| Table 6 | `scripts/phase5_vocab_adapt.py`, `evaluation/evaluate.py` | `results/tables/table4_before_after_fragmentation.csv`, Table 5 file |
+| Table 7 | `scripts/phase6_semantic.py` | `results/tables/table5_semantic_similarity.csv` |
+| Table 8 | `scripts/phase9_embedding_analysis.py` | `results/tables/table9_embedding_analysis.csv` |
+| Table 9 | `evaluation/evaluate.py` | `results/classification/classification_summary.csv` |
+| Table 10 | `evaluation/significance.py` | `results/classification/per_class_metrics.csv` |
+| Table 11 | `training/train_classifier.py` | `results/predictions/<model>/fold_metrics.csv` |
+| Table 12 | `evaluation/significance.py` | `results/classification/significance_tests.json` |
+| Table 13 | `evaluation/evaluate.py`, `evaluation/significance.py` | `fragmentation_stratified_accuracy.csv`, `truncation_by_quartile.csv` |
+| Table 14 | `evaluation/significance.py` | `results/classification/audit_subset_check.csv` |
 
----
+## Reproducibility notes
 
-## Notes
-- ~97.2% of sentiment labels are `model_predicted` (not human-annotated). Results are preliminary until `data/processed/human_audit_sample.csv` is filled in.
-- `hf_cache/` (~1.6 GB) and `models/mbert_adapted/model.safetensors` (~680 MB) are git-ignored — auto-downloaded on first run.
-- See `LIMITATIONS.md` for full methodological caveats.
-- See `RESULTS_SUMMARY.md` for paper-ready numbers, interpretations, and all figure captions.
+- Each configuration was trained once with seed 42. GPU non-determinism means retrained models will not match the saved predictions bit-for-bit.
+- Vocabulary selection and MLM pre-training use the text, but never the labels, of all corpus sentences. This is the transductive setting described in paper Section 3.1.
+- Model weights are not stored in git. The paper lists the OBPE +498 checkpoint on the Hugging Face Hub as `rudrakachhia/mbert-obpe-adapted`; the MLM checkpoint is to be released there. Otherwise, rebuild them with the scripts above.
+- `logs/experiment_log.csv` is the run log appended by the phase scripts.
+
+## Data and ethics
+
+The original 21,346-sentence dataset is derived from [ShrutiPatel3011/gujarati-english-codemixed-sentiment](https://huggingface.co/datasets/ShrutiPatel3011/gujarati-english-codemixed-sentiment). The YouTube comments were collected through the YouTube Data API v3 from public videos. Labels are LLM-generated, and a stratified sample of 150 was audited by the authors.
+
+## Authors
+
+Devarsh Patel, Jay Patel (corresponding, jaypatel240605@gmail.com), Rudra Kachhia, Nand Thakor. Computer Engineering Department, G. H. Patel College of Engineering & Technology, The CVM University, Vallabh Vidyanagar, Gujarat, India.

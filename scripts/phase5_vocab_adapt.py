@@ -8,13 +8,13 @@ Phase 5 -- Vocabulary Adaptation and Re-measurement
 1. Adds the top 75 Gujlish words (selected in Phase 4) to the mBERT tokenizer.
 2. Loads the mBERT model and resizes its embedding matrix to cover the new tokens.
    New token embeddings are randomly initialized (standard HuggingFace behaviour).
-3. Saves the adapted tokenizer and model to models/mbert_adapted/.
+3. Saves the adapted tokenizer and model to models/mbert_pilot75/.
 4. Re-runs the exact same fragmentation analysis from Phase 3 using the adapted
    tokenizer.
 5. Produces a before/after comparison table and figure.
 
 Outputs:
-    models/mbert_adapted/               (tokenizer + model weights)
+    models/mbert_pilot75/               (tokenizer + model weights)
     results/tables/table4_before_after_fragmentation.csv
     results/figures/fig3_fragmentation_before_after.png
 """
@@ -114,11 +114,11 @@ print(f"      Model embedding size (after) : {adapted_model.get_input_embeddings
 print("      New token embeddings are randomly initialized (standard HuggingFace behaviour).")
 
 # ── Save adapted tokenizer and model ──────────────────────────────────────────
-adapted_dir = MODELS / "mbert_adapted"
+adapted_dir = MODELS / "mbert_pilot75"
 adapted_dir.mkdir(parents=True, exist_ok=True)
 adapted_tok.save_pretrained(str(adapted_dir))
 adapted_model.save_pretrained(str(adapted_dir))
-print(f"\n      Saved adapted tokenizer + model -> models/mbert_adapted/")
+print(f"\n      Saved adapted tokenizer + model -> models/mbert_pilot75/")
 
 # ── Re-run fragmentation analysis ─────────────────────────────────────────────
 print("\n[5/5] Re-running fragmentation analysis with adapted tokenizer...")
@@ -292,5 +292,5 @@ print(f"  New vocab size          : {new_vocab_size:,}  (was {baseline_vocab_siz
 print(f"  Avg subwords/word       : {before_stats['avg_subwords_per_word']:.3f} -> {after_stats['avg_subwords_per_word']:.3f}  ({pct_change(before_stats['avg_subwords_per_word'], after_stats['avg_subwords_per_word'])})")
 print(f"  % fragmented            : {before_stats['pct_words_fragmented']:.1f}% -> {after_stats['pct_words_fragmented']:.1f}%  ({pct_change(before_stats['pct_words_fragmented'], after_stats['pct_words_fragmented'])})")
 print(f"  % single token          : {before_stats['pct_words_single_token']:.1f}% -> {after_stats['pct_words_single_token']:.1f}%  ({pct_change(before_stats['pct_words_single_token'], after_stats['pct_words_single_token'])})")
-print(f"  Saved model             : models/mbert_adapted/")
+print(f"  Saved model             : models/mbert_pilot75/")
 print(f"  Output: table4_before_after_fragmentation.csv, fig3_fragmentation_before_after.png")

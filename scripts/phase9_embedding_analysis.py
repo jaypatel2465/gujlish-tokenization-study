@@ -84,7 +84,7 @@ print("  Loading mBERT baseline tokenizer...")
 base_tok = AutoTokenizer.from_pretrained("bert-base-multilingual-cased")
 print(f"  Baseline vocab size: {len(base_tok):,}")
 
-adapted_dir = MODELS / "mbert_adapted"
+adapted_dir = MODELS / "mbert_pilot75"
 print("  Loading adapted tokenizer...")
 adap_tok = AutoTokenizer.from_pretrained(str(adapted_dir))
 print(f"  Adapted vocab size : {len(adap_tok):,}")

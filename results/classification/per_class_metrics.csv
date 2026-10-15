@@ -1,0 +1,13 @@
+model,class,n,precision,recall,f1
+mBERT baseline,negative,13929,0.7,0.727,0.7133
+mBERT baseline,neutral,12961,0.6706,0.6506,0.6605
+mBERT baseline,positive,23937,0.8407,0.8353,0.838
+mBERT baseline,macro,50827,0.7371,0.7377,0.7372
+MuRIL baseline,negative,13929,0.6924,0.6728,0.6825
+MuRIL baseline,neutral,12961,0.5997,0.6621,0.6294
+MuRIL baseline,positive,23937,0.8471,0.8132,0.8298
+MuRIL baseline,macro,50827,0.713,0.7161,0.7139
+mBERT 798-tok + MLM,negative,13929,0.7143,0.7396,0.7267
+mBERT 798-tok + MLM,neutral,12961,0.6622,0.677,0.6695
+mBERT 798-tok + MLM,positive,23937,0.854,0.8261,0.8398
+mBERT 798-tok + MLM,macro,50827,0.7435,0.7476,0.7454

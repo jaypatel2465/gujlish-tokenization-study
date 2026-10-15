@@ -1,0 +1,4 @@
+model_dir,model,n_code_mixed,n_monolingual,mean_frag_code_mixed,mean_frag_monolingual,welch_t,p_value,significant
+mbert_baseline,mBERT (baseline),3638,47523,2.6356,1.762,46.2485,0.0,True
+muril_baseline,MuRIL (baseline),3638,47523,1.7266,1.5726,10.0935,1.1508111401569397e-23,True
+mbert_798_mlm,mBERT 798-tok + MLM,3637,47518,1.99,1.603,22.2934,1.2598536888592554e-103,True

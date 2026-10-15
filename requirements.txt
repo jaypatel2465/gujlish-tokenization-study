@@ -1,38 +1,28 @@
-# ─────────────────────────────────────────────────────────────────────────────
-# Gujlish Tokenization Study — Python Dependencies
-# Tested with Python 3.10 / 3.11 / 3.12 / 3.14
+# Gujlish Tokenization Study — main environment
+# (data pipeline, fragmentation analysis, classification, evaluation, inference)
 #
-# GPU INSTALL (recommended for Phase 7):
-#   First install PyTorch with CUDA support from https://pytorch.org/get-started/locally/
-#   Example (CUDA 12.1):
-#     pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-#   Then install the rest:
-#     pip install -r requirements.txt
-#
-# CPU-only INSTALL:
-#   pip install torch torchvision torchaudio
+# Install PyTorch first for your platform: https://pytorch.org/get-started/locally/
+#   GPU (CUDA 12.1):  pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   CPU only:         pip install torch
+# then:
 #   pip install -r requirements.txt
-# ─────────────────────────────────────────────────────────────────────────────
+#
+# MLM pre-training and OBPE model building (training/build_obpe_base.py,
+# training/mlm_pretrain.py) use a separate environment: requirements-mlm.txt.
 
-# Core NLP / Transformers
-transformers>=4.40.0
-datasets>=2.18.0
-tokenizers>=0.19.0
-huggingface-hub>=0.22.0
+# training/common.py passes warmup_steps=0.1, which Transformers >= 5
+# interprets as a 10% warmup ratio.
+transformers>=5.0,<6
+datasets>=2.18
+accelerate>=1.1
+safetensors>=0.4
 
-# PyTorch (install separately per platform — see above)
-# torch>=2.1.0
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+scipy>=1.12
+matplotlib>=3.8
+tqdm>=4.66
 
-# Data science
-pandas>=2.0.0
-numpy>=1.26.0
-scikit-learn>=1.4.0
-scipy>=1.12.0
-
-# Visualisation
-matplotlib>=3.8.0
-
-# Utilities
-tqdm>=4.66.0
-accelerate>=0.29.0
-sentencepiece>=0.2.0
+# Only for scripts/phase1b_expand_dataset.py (YouTube Data API v3 collection)
+# google-api-python-client>=2.100

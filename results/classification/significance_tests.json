@@ -1,0 +1,55 @@
+{
+  "n_shared_predictions": 50827,
+  "mcnemar": {
+    "mbert_798_mlm vs mbert_baseline": {
+      "n10": 3807,
+      "n01": 3511,
+      "chi2": 11.8919,
+      "p_value": 0.0005637826818340459
+    },
+    "mbert_baseline vs muril_baseline": {
+      "n10": 5105,
+      "n01": 3970,
+      "chi2": 141.7031,
+      "p_value": 1.1292543959492078e-32
+    },
+    "mbert_798_mlm vs muril_baseline": {
+      "n10": 5345,
+      "n01": 3914,
+      "chi2": 220.8554,
+      "p_value": 5.885781682716112e-50
+    }
+  },
+  "fold_ttest": {
+    "mbert_798_mlm vs mbert_baseline": {
+      "n_folds": 5,
+      "t": 4.9442,
+      "p_value": 0.0078,
+      "mean_diff": 0.008,
+      "cohens_d": 2.2111,
+      "diff_ci95": [
+        0.0035,
+        0.0125
+      ]
+    },
+    "muril_baseline vs mbert_baseline": {
+      "n_folds": 5,
+      "t": -11.8287,
+      "p_value": 0.0003,
+      "mean_diff": -0.0235,
+      "cohens_d": -5.29,
+      "diff_ci95": [
+        -0.0291,
+        -0.018
+      ]
+    }
+  },
+  "bootstrap_macro_f1": {
+    "mbert_798_mlm - mbert_baseline": {
+      "n_resamples": 1000,
+      "mean_diff": 0.0081,
+      "ci95_low": 0.0047,
+      "ci95_high": 0.0114
+    }
+  }
+}
